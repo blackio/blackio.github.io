@@ -1,0 +1,34 @@
+@import '../../style/colors'
+
+.cv-title
+  text-transform: uppercase
+  white-space: nowrap
+  &_main
+    margin-bottom: 1rem
+    font-size: 3.6rem
+  &__subtitle
+    font-size: .9rem
+    font-weight: bold
+    color: $color-primary-4
+    text-transform: uppercase
+    &_main
+      margin: 0 0 3rem .5rem
+      letter-spacing: 0.6rem
+      color: initial
+  &__wrap
+    height: 100%
+    margin: 0 4rem 0 2rem
+    text-align-last: left
+    border-bottom: 3px solid $color-primary-4
+    box-sizing: border-box
+
+
+@media screen and (max-width: 768px)
+  .cv-title
+    &_main
+      font-size: 2.6rem
+    &__subtitle
+      font-size: .8rem
+    &__wrap
+      min-height: 100vh
+      margin: 0 4rem 0 2rem

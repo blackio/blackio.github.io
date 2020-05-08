@@ -1,0 +1,43 @@
+@import '../../style/colors'
+
+.cv-item
+  width: 100%
+  margin: 0 4rem 0 2rem
+  padding: .5rem 0 1.2rem
+  border-bottom: 1px solid $color-primary-01
+  &__header
+    margin: 1.4rem 0 0.4rem
+    display: flex
+  &__title
+    flex: 1
+    font-size: .9rem
+    font-weight: bold
+    text-transform: uppercase
+    white-space: nowrap
+  &__title_block
+    margin: 2.4rem 0 1.4rem
+    font-size: 1.3rem
+  &__subtitle
+    display: block
+    font-size: .8rem
+    font-weight: bold
+    color: $color-primary-4
+    text-transform: uppercase
+  &__text
+    margin-top: .9rem
+    line-height: 1.3
+  &__date
+    font-weight: bold
+  &__link
+    color: $color-primary-3
+    text-decoration: none
+    &:visited
+      color: $color-primary-4
+      text-decoration: none
+
+.cv-aside
+  .cv-item
+    width: auto
+    margin: 1.5rem
+    padding: 0
+    border: none

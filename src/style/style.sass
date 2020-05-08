@@ -1,0 +1,36 @@
+@import 'assets/libs/flexboxgrid.css'
+@import 'reset'
+@import 'fonts'
+@import 'colors'
+@import 'screen-sizes'
+
+
+.cv
+  margin: 2rem auto 10rem
+  max-width: 800px
+  font-family: 'Raleway', sans-serif
+  color: #333
+  background: #fefefe
+  border-radius: 2px
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+  &-header
+    min-height: 400px
+  &-body
+    padding: 0 0 5rem
+  &-aside
+    margin-top: -2px
+    padding-bottom: 3rem
+    color: #fffcfe
+    background: #474245
+
+
+@media screen and (max-width: $mobile-xs)
+  .cv
+    margin: 0
+    font-size: 16px
+    border-radius: 0
+    &-body
+      order: 10
+    &-aside
+      padding-top: 1rem
+      order: 100

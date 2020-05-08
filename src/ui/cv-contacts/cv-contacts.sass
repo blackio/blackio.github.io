@@ -1,0 +1,31 @@
+@import '../../style/colors'
+
+.cv-contacts
+  list-style: none
+  color: $color-primary-1
+  &__item
+    display: flex
+    justify-content: space-between
+    padding: 1.8rem 1.5rem
+    position: relative
+    background: $color-primary-2
+    &:nth-child(2)
+      background: $color-primary-3
+    &:nth-child(3)
+      background: $color-primary-4
+    &-icon
+      height: 1.2rem
+      width: 1.2rem
+      fill: #fff
+    &-link
+      color: $color-primary-1
+      text-decoration: none
+  &__wrap
+    margin-bottom: 1rem
+
+@media screen and (max-width: 768px)
+  .cv-contacts
+    &__wrap
+      margin-top: 2rem
+      order: 100
+
